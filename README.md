@@ -1,19 +1,42 @@
-# Nova-Tasks
+# 🚀 Nova Tasks
 
-A simple task management application built with Nova and Vue.js.
+A beautiful, modern, and feature-rich Todo List application built with pure HTML, CSS, and JavaScript.
+Stay productive by creating, organizing, and completing your tasks with ease. ✅
 
-## Features
+---
 
-- Add, edit, and delete tasks
-- Mark tasks as complete or incomplete
-- Filter tasks by status (all, active, completed)
-- Responsive design for mobile and desktop
+## ✨ Features
 
-## Installation
+- ➕ Add and ❌ Delete tasks
+- ✅ Mark tasks as **complete** or **incomplete**
+- 🔎 Filter tasks by status: _All_, _Active_, _Completed_
+- 📱 Responsive design (Mobile & Desktop friendly)
+
+---
+
+## 🎨 Modern Design
+
+- Glass Morphism UI with backdrop filters
+- Smooth animations and transitions
+- Intuitive layout for easy navigation
+- Dark and light mode support
+
+---
+
+```bash
+nova-tasks/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+## 🛠️ Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/nova-tasks.git
+   git clone https://github.com/Anas284/Nova-Tasks.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -28,8 +51,3 @@ A simple task management application built with Nova and Vue.js.
    npm run dev
    ```
 5. Open your browser and go to `http://localhost:3000` to see the application in action.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
-Make sure to follow the existing code style and include tests for any new features.
