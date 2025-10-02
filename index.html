@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Tasks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="container">
+        <div class="app-card">
+            <header class="app-header">
+                <div class="header-content">
+                    <div class="logo">
+                        <i class="fas fa-check-double"></i>
+                        <h1>Nova Tasks</h1>
+                    </div>
+                    <div class="date-display">
+                        <span id="currentDate"></span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="add-task-section">
+                <div class="input-container">
+                    <input type="text" id="todoInput" placeholder="What needs to be done?">
+                    <button id="addBtn" class="add-button">
+                        <i class="fas fa-plus"></i>
+                        Add Task
+                    </button>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-value" id="totalTasks">0</div>
+                    <div class="stat-label">Total</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="pendingTasks">0</div>
+                    <div class="stat-label">Pending</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="completedTasks">0</div>
+                    <div class="stat-label">Done</div>
+                </div>
+            </div>
+
+            <div class="filters-section">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-layer-group"></i>
+                        All
+                    </button>
+                    <button class="filter-btn" data-filter="pending">
+                        <i class="fas fa-clock"></i>
+                        Pending
+                    </button>
+                    <button class="filter-btn" data-filter="completed">
+                        <i class="fas fa-check-circle"></i>
+                        Completed
+                    </button>
+                </div>
+            </div>
+
+            <div class="todo-list-container">
+                <ul id="todoList" class="todo-list"></ul>
+                
+                <div id="emptyState" class="empty-state">
+                    <div class="empty-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>No tasks yet</h3>
+                    <p>Add a task above to get started!</p>
+                </div>
+            </div>
+
+            <div class="actions-section">
+                <button id="clearCompleted" class="clear-btn">
+                    <i class="fas fa-broom"></i>
+                    Clear Completed
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="confettiCanvas"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
