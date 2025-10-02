@@ -23,6 +23,8 @@ Stay productive by creating, organizing, and completing your tasks with ease. �
 
 ---
 
+## 📁 Project Structure
+
 ```bash
 nova-tasks/
 │
